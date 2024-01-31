@@ -38,8 +38,13 @@ public class postfix_to_infix {
     }
 
     public static void main(String[] args) {
-        String postfix = "23*5+";
-        String infix = postfix_to_infix.postToInfix(postfix);
-        System.out.println("Infix expression: " + infix);
+//        String postfix = "23*5+";
+//        String infix = postfix_to_infix.postToInfix(postfix);
+//        System.out.println("Infix expression: " + infix);
+
+        byte x = 64;
+        int i = x << 2;
+        byte y = (byte) (x<< 2);
+        System.out.println(i + " " + y);
     }
 }
