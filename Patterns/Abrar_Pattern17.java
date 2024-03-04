@@ -283,21 +283,21 @@ public class Abrar_Pattern17 {
         int n =5;
 //      Scanner scanner = new Scanner(System.in);
 //      n = scanner.nextInt();
-//        starPyramid(n);
-//        invertedStarPyramid(n);
-//        diamondStarPattern(n);
-//        halfDiamondStarPattern(n);
-//        binaryNumberTrianglePattern(n);
-//        numberCrownPattern(n);
-//        increasingNumberTrianglePattern(n);
-//        increasingLetterTrianglePattern(n);
-//        reverseLetterTrianglePattern(n);
-//        alphaRampPattern(n);
-//        alphaHillPattern(n);
-//        alphaTrianglePattern(n);
-//        symmetricVoidPattern(n);
-//        symmetricButterflyPattern(n);
-//        hollowRectanglePattern(n);
+        starPyramid(n);
+        invertedStarPyramid(n);
+        diamondStarPattern(n);
+        halfDiamondStarPattern(n);
+        binaryNumberTrianglePattern(n);
+        numberCrownPattern(n);
+        increasingNumberTrianglePattern(n);
+        increasingLetterTrianglePattern(n);
+        reverseLetterTrianglePattern(n);
+        alphaRampPattern(n);
+        alphaHillPattern(n);
+        alphaTrianglePattern(n);
+        symmetricVoidPattern(n);
+        symmetricButterflyPattern(n);
+        hollowRectanglePattern(n);
 
     }
 }

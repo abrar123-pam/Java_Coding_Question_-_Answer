@@ -10,9 +10,10 @@ public class MajorityElement {
         for (int i=0;i<n;i++){
             if (map.containsKey(num[i])){
                 map.put(num[i],map.get(num[i]) + 1);
+                System.out.println(map.put(num[i],map.get(num[i]) + 1));
             }else {
                 map.put(num[i], 1);
-            }
+            }   
         }
         for (int key :map.keySet()){
             if (map.get(key) > n/3){
@@ -52,8 +53,9 @@ public class MajorityElement {
 //        for (int i=0;i<n;i++){
 //            num[i] = sc.nextInt();
 //        }
-//        MajorElement(num);
-//        int[] a = {5,8,3,2,1,4};
+        int[] a = {5,8,3,2,1,4};
+        MajorElement(a);
+
 //        Set<Integer> set = new HashSet<>();
 //
 //        for (int i = 0; i < a.length; i++) {

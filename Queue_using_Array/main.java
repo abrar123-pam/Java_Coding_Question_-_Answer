@@ -4,6 +4,8 @@ public class main {
     public static void main(String[] args) {
         Queue queue = new Queue();
 
+
+
         queue.enqueue(2);
         queue.enqueue(3);
         queue.enqueue(4);
