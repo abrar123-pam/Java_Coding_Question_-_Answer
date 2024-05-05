@@ -1,7 +1,7 @@
 package Hashing;
 import java.util.HashMap;
 
-public class ItenaryFromTickets {
+public class oItenaryFromTickets {
 
     public static String getStart(HashMap<String,String> tic){
         HashMap<String,String> revTick = new HashMap<>();

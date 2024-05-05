@@ -20,6 +20,7 @@ public class hashmap {
         map.put("RICE", "salna");
         System.out.println(map);
 
+
         for (Map.Entry<String, String> e : map.entrySet()) {
             System.out.println(e.getKey() + " = " + e.getValue());
         }

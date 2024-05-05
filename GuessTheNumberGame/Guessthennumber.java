@@ -63,7 +63,6 @@ class GuessGame{
     GuessGame(){
         Random rand = new Random();
         compnum = rand.nextInt(100);
-
     }
 
     void takeuserinput(){
