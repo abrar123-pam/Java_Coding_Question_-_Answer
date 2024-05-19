@@ -4,7 +4,7 @@ import java.util.*;
 public class Stack {
 
     Queue<Integer> queue;
-    Stack(){
+    public Stack(){
         queue = new LinkedList<>();
     }
 
