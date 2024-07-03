@@ -26,7 +26,7 @@ public class kokoEatingBananas {
         int low = 0;
         int high = findMax(arr);
 
-        while (low<= high){
+        while (low <= high){
             int mid = (low+high)/2;
 
             int totalH = calculateH(arr,mid);

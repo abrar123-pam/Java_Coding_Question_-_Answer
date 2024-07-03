@@ -2,6 +2,29 @@ package Patterns;
 
 public class Abrar_Pattern17 {
 
+    public static int combination(int n, int r){
+        return factorial(n)/(factorial(r)*factorial(n-r));
+    }
+
+    public static int factorial(int n){
+        if(n==0){
+            return 1;
+        }
+        return n* factorial(n-1);
+    }
+    public static void pascalTriangle(int n){
+        for(int i=0;i<n;i++){
+
+            for(int j=0;j<n-i;j++){
+                System.out.print(" ");
+            }
+
+            for(int k=0;k<=i;k++){
+                System.out.print(combination(i,k)+" ");
+            }
+            System.out.println();
+        }
+    }
     public static void starPyramid(int n){
         int i,j;
         for (i=1;i<=n;i++){
@@ -283,21 +306,38 @@ public class Abrar_Pattern17 {
         int n =5;
 //      Scanner scanner = new Scanner(System.in);
 //      n = scanner.nextInt();
-        starPyramid(n);
+       starPyramid(n);
+        System.out.println("---------------------------------");
         invertedStarPyramid(n);
+        System.out.println("---------------------------------");
         diamondStarPattern(n);
+        System.out.println("---------------------------------");
         halfDiamondStarPattern(n);
+        System.out.println("---------------------------------");
         binaryNumberTrianglePattern(n);
+        System.out.println("---------------------------------");
         numberCrownPattern(n);
+        System.out.println("---------------------------------");
         increasingNumberTrianglePattern(n);
+        System.out.println("---------------------------------");
         increasingLetterTrianglePattern(n);
+        System.out.println("---------------------------------");
         reverseLetterTrianglePattern(n);
+        System.out.println("---------------------------------");
         alphaRampPattern(n);
+        System.out.println("---------------------------------");
         alphaHillPattern(n);
+        System.out.println("---------------------------------");
         alphaTrianglePattern(n);
+        System.out.println("---------------------------------");
         symmetricVoidPattern(n);
+        System.out.println("---------------------------------");
         symmetricButterflyPattern(n);
+        System.out.println("---------------------------------");
         hollowRectanglePattern(n);
+        System.out.println("---------------------------------");
+
+        pascalTriangle(n);
 
     }
 }
