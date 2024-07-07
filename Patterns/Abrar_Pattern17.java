@@ -300,44 +300,90 @@ public class Abrar_Pattern17 {
         }
     }
 
+    private static void xPatern(String s) {
+        int n = s.length();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(i==j ){
+                    System.out.print(s.charAt(j));
+                } else if (j == (n-i-1)) {
+                    System.out.print(s.charAt(j));
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    private static void Zpatern(int n) {
+
+        for(int i=1;i<=n;i++){
+            System.out.print("*");
+        }
+        System.out.println();
+
+        for (int i=1;i<=n-2;i++){
+            for(int j=1;j<=n-i-1;j++){
+                System.out.print(" ");
+            }
+            System.out.println("*");
+
+        }
+        for(int i=1;i<=n;i++){
+            System.out.print("*");
+        }
+
+        System.out.println();
+    }
+
 
 
     public static void main(String[] args) {
         int n =5;
 //      Scanner scanner = new Scanner(System.in);
 //      n = scanner.nextInt();
-       starPyramid(n);
-        System.out.println("---------------------------------");
-        invertedStarPyramid(n);
-        System.out.println("---------------------------------");
-        diamondStarPattern(n);
-        System.out.println("---------------------------------");
-        halfDiamondStarPattern(n);
-        System.out.println("---------------------------------");
-        binaryNumberTrianglePattern(n);
-        System.out.println("---------------------------------");
-        numberCrownPattern(n);
-        System.out.println("---------------------------------");
-        increasingNumberTrianglePattern(n);
-        System.out.println("---------------------------------");
-        increasingLetterTrianglePattern(n);
-        System.out.println("---------------------------------");
-        reverseLetterTrianglePattern(n);
-        System.out.println("---------------------------------");
-        alphaRampPattern(n);
-        System.out.println("---------------------------------");
-        alphaHillPattern(n);
-        System.out.println("---------------------------------");
-        alphaTrianglePattern(n);
-        System.out.println("---------------------------------");
-        symmetricVoidPattern(n);
-        System.out.println("---------------------------------");
-        symmetricButterflyPattern(n);
-        System.out.println("---------------------------------");
-        hollowRectanglePattern(n);
-        System.out.println("---------------------------------");
+//       starPyramid(n);
+//        System.out.println("---------------------------------");
+//        invertedStarPyramid(n);
+//        System.out.println("---------------------------------");
+//        diamondStarPattern(n);
+//        System.out.println("---------------------------------");
+//        halfDiamondStarPattern(n);
+//        System.out.println("---------------------------------");
+//        binaryNumberTrianglePattern(n);
+//        System.out.println("---------------------------------");
+//        numberCrownPattern(n);
+//        System.out.println("---------------------------------");
+//        increasingNumberTrianglePattern(n);
+//        System.out.println("---------------------------------");
+//        increasingLetterTrianglePattern(n);
+//        System.out.println("---------------------------------");
+//        reverseLetterTrianglePattern(n);
+//        System.out.println("---------------------------------");
+//        alphaRampPattern(n);
+//        System.out.println("---------------------------------");
+//        alphaHillPattern(n);
+//        System.out.println("---------------------------------");
+//        alphaTrianglePattern(n);
+//        System.out.println("---------------------------------");
+//        symmetricVoidPattern(n);
+//        System.out.println("---------------------------------");
+//        symmetricButterflyPattern(n);
+//        System.out.println("---------------------------------");
+//        hollowRectanglePattern(n);
+//        System.out.println("---------------------------------");
+//
+//        pascalTriangle(n);
+//        System.out.println("---------------------------------");
+//        xPatern("HelloWorldP");
 
-        pascalTriangle(n);
+        System.out.println("---------------------------------");
+        Zpatern(n);
+
 
     }
+
+
+
 }

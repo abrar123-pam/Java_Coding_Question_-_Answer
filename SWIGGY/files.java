@@ -43,7 +43,7 @@ public class files {
     public static void saveFoodItems(){
         try(FileWriter writer = new FileWriter(FOOD_FILE)){
             for(Hotel hotel : stored_hotel.values()){
-                for(Map.Entry<String,FoodItem> entry : hotel.getFoodInventory().entrySet()){
+                for(Map.Entry<String, FoodItem> entry : hotel.getFoodInventory().entrySet()){
                     writer.write(hotel.getShopName() +","+entry.getKey()+","+entry.getValue().getQuantity()+","+entry.getValue().getPrice()+"\n");
                 }
             }

@@ -7,7 +7,10 @@ class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        loadData();
+        //loadData();
+        Register.load();
+        Register r =new Register();
+
 
         boolean loop = true;
 
@@ -33,8 +36,8 @@ class Main {
                     System.out.println("Enter valid choice");
                     break;
             }
-
-            saveData();
+            r.save();
+            //saveData();
         }
     }
 

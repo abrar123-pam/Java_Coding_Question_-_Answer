@@ -1,15 +1,56 @@
 package SWIGGY;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
-public class Register{
-    static Map<String,Hotel> stored_hotel = new HashMap<>();
-    static Map<String,Delivery> stored_delivery = new HashMap<>();
-    static Map<String,Customer> stored_customer = new HashMap<>();
+public class Register implements Serializable {
+    static Map<String, Hotel> stored_hotel = new HashMap<>();
+    static Map<String, Delivery> stored_delivery = new HashMap<>();
+    static Map<String, Customer> stored_customer = new HashMap<>();
+    private static String path = "C:\\Users\\Abrar Musharraf P\\IdeaProjects\\Practice\\src\\SWIGGY\\db.bin";
+
+    public static Register instance = null;
+    private final static long serialVersionUID = 3332558164119974661L;
+    public void save(){
+
+
+        try {
+            FileOutputStream fs = new FileOutputStream(path);
+            ObjectOutputStream os = new ObjectOutputStream(fs);
+            os.writeObject(this);
+            os.close();
+            System.out.println("DataBase Saved Sucessfully");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static Register load(){
+
+        if (instance != null) {
+            return instance;
+        }
+        try {
+
+            FileInputStream fs = new FileInputStream(path);
+
+            ObjectInputStream os = new ObjectInputStream(fs);
+
+            instance = (Register) os.readObject();
+            os.close();
+            System.out.println("Loaded Data successfully");
+
+        }catch (Exception e){
+            System.out.println("Error: " + e.getMessage());
+            System.out.println("Created New Database");
+
+            instance = new Register();
+            e.printStackTrace();
+        }
+
+        return instance;
+    }
+
 
 
 
@@ -27,7 +68,7 @@ public class Register{
         Hotel hotel = stored_hotel.get(sName);
 
         if(hotel != null){
-            Map<String,FoodItem> foodInventory = hotel.getFoodInventory();
+            Map<String, FoodItem> foodInventory = hotel.getFoodInventory();
             if(foodInventory.containsKey(food)){
                 FoodItem item = foodInventory.get(food);
                 if(item.getQuantity() >= quantity){

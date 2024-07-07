@@ -1,9 +1,10 @@
 package SWIGGY;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-class Hotel{
+public class Hotel implements Serializable {
     // static int id = 1;
     private String shopName;
     private String ownerName;
@@ -13,7 +14,7 @@ class Hotel{
     private Map<String, FoodItem> foodInventory;
     //  int hotelId = id++;
 
-    Hotel(String shopName, String ownerName, String shopAddress, String fssaiCertificate, String password) {
+    public Hotel(String shopName, String ownerName, String shopAddress, String fssaiCertificate, String password) {
         this.shopName = shopName;
         this.ownerName = ownerName;
         this.shopAddress = shopAddress;

@@ -1,6 +1,8 @@
 package SWIGGY;
 
-class FoodItem {
+import java.io.Serializable;
+
+public class FoodItem implements Serializable {
     private int quantity;
     private int price;
 
