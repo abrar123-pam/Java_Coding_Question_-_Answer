@@ -10,10 +10,10 @@ public class ratInMaze {
         int[] dx = {1,0,0,-1};
         int[] dy = {0,-1,1,0};
         ArrayList<String> list = new ArrayList<>();
-        if(arr[0][0] == 1)
-            solve(0,0,arr,list,n,"",visited,dx,dy);
 //        if(arr[0][0] == 1)
-//             findExit(0,0,arr,list,n,"",visited);
+//            solve(0,0,arr,list,n,"",visited,dx,dy);
+        if(arr[0][0] == 1)
+             findExit(0,0,arr,list,n,"",visited);
 
         for (String s : list){
             System.out.println(s);

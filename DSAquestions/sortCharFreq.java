@@ -27,6 +27,7 @@ public class sortCharFreq {
                     for (int j = 0; j < idx; j++) {
                         sb.append(key);
                     }
+
                     used.add(key);
                     break;
                 }
