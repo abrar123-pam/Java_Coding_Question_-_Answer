@@ -24,7 +24,7 @@ public class suduko_solver {
     }
 
     private static void solveSudoku(char[][] board) {
-        printBoard(board);
+            printBoard(board);
     }
 
 
